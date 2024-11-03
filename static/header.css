@@ -22,3 +22,15 @@
     flex: 1;
     text-align: right;
 }
+
+
+
+.header-flex-box > div > button {
+ border-radius: 5px;
+ background: bisque;
+ border: none;
+}
+
+.header-flex-box > div > button:hover{
+cursor: pointer;
+}
