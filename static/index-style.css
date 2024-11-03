@@ -56,6 +56,21 @@ body{
     padding: 3px;
     
 }
+
+
+
+.topic-card-share {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center vertically */
+    justify-content:left;
+    gap: 5px;
+}
+.topic-card-share > img:hover{
+    opacity:0.5;
+    cursor: pointer;
+}
+
 .topic-card-title{
     font-size: 1.3em;
     font-weight: bold;
