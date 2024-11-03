@@ -11,7 +11,7 @@ body{
 .main-grid{
         display:grid;
         grid-template-columns: 100%;
-        grid-template-rows: 8vh 2vh 80vh 2vh 8vh;
+        grid-template-rows: 8vh 2vh auto 10x 8px;
         grid-template-areas: 
            "hd"
            "br1"
@@ -106,7 +106,7 @@ body{
     .main-grid{
         display:grid;
         grid-template-columns: 100%;
-        grid-template-rows: 50px 20px 700px 20px 80px;
+        grid-template-rows: 50px 20px auto auto auto;
         grid-template-areas: 
            "hd"
            "br1"
