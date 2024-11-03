@@ -1,0 +1,16 @@
+
+.line-break-top{
+    height: 1px; /* Height of the line */
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient colors */
+    border: none; /* Remove border */
+    margin-bottom: 5px; /* Spacing around the line */
+    grid-area: br1;
+}
+
+.line-break-bottom{
+    height: 1px; /* Height of the line */
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient colors */
+    border: none; /* Remove border */
+    margin-top: 10px; /* Spacing around the line */
+    grid-area: br2;
+}

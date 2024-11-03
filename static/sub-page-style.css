@@ -1,0 +1,52 @@
+
+@import url("footer.css");
+@import url("header.css");
+@import url("line-break.css");
+
+
+.subPage-main-grid{
+    display:grid;
+    grid-template-columns: repeat(10,10%);
+    grid-template-rows: 8vh 2vh 5vh 22vh 43vh 2vh 8vh;
+    grid-template-areas: 
+       "hd hd hd hd hd hd hd hd hd hd"
+       "br1 br1 br1 br1 br1 br1 br1 br1 br1 br1"
+       "ti ti ti ti ti ti ti ti ti ti"
+       "de de de de de de de de de de"
+       "pc pc pc pc im im im im im im"
+       "br2 br2 br2 br2 br2 br2 br2 br2 br2 br2"
+       "ft ft ft ft ft ft ft ft ft ft";
+}
+
+.header{
+    grid-area: hd;
+}
+.topic-title{
+ grid-area: ti;
+}
+.topic-desc{
+ grid-area: de;
+}
+.topic-digram{
+    grid-area: im;
+    text-align: center;
+}
+
+.topic-digram > img{
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 250px;
+   
+}
+.topic-pros-cons > a{
+    background-color: black;
+    border-radius: 3px;
+    color: azure;
+    text-decoration: none;
+}
+
+
+.topic-pros-cons{
+    grid-area: pc;
+}

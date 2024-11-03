@@ -1,0 +1,124 @@
+@import url("footer.css");
+@import url("header.css");
+@import url("line-break.css");
+
+
+body{
+    font-size: 16px;
+    background-color: rgb(228, 215, 215);
+}
+
+.main-grid{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 8vh 2vh 80vh 2vh 8vh;
+        grid-template-areas: 
+           "hd"
+           "br1"
+           "main"
+           "br2"
+           "ft";
+        /*border: 2px solid yellow;*/
+}
+
+
+.header{
+    grid-area: hd;
+}
+
+.content{
+    grid-area: main;
+}
+
+ /*Content Section*/
+
+.content-grid{
+    display:grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+       "topic-1 topic-2"
+       "topic-3 topic-4"
+       "topic-5 topic-6";
+    /*border: 2px solid red;*/
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.topic-card{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+    border: 3px solid #826c68;
+    border-radius: 4px;
+    padding: 3px;
+    
+}
+.topic-card-title{
+    font-size: 1.3em;
+    font-weight: bold;
+    flex: 1;
+}
+.topic-card-date{
+    color: darkblue;
+    font-size: 0.8em;
+    flex: 1;
+}
+.topic-card-description{
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    flex: 1;
+}
+.topic-card-link{
+    color: rgb(80, 80, 171);
+    font-size: 0.8em;
+    flex: 1;
+   padding-top: 20px;
+}
+
+
+
+
+@media(max-width:700px) {
+  
+    body{
+        font-size: 12px;
+    }
+
+
+    .main-grid{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 20px 700px 20px 80px;
+        grid-template-areas: 
+           "hd"
+           "br1"
+           "main"
+           "br2"
+           "ft";
+        /*border: 2px solid yellow;*/
+     }
+
+.content-grid{
+    display:grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+       "topic-1"
+       "topic-2"
+       "topic-3"
+       "topic-4"
+       "topic-5"
+       "topic-6";
+    /*border: 2px solid red;*/
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+
+
+}
+
