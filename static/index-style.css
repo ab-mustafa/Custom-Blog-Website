@@ -6,6 +6,8 @@
 body{
     font-size: 16px;
     background-color: rgb(228, 215, 215);
+    min-width: 300px;
+    
 }
 
 .main-grid{

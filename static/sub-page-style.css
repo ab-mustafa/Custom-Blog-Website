@@ -3,6 +3,9 @@
 @import url("header.css");
 @import url("line-break.css");
 
+body{
+    min-width: 300px;
+}
 
 .subPage-main-grid{
     display:grid;
